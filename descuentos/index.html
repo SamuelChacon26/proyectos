@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1 class="t-principal">TIENDA</h1>
+			<div class="container-pag">
+				<a href="index.html"><b>NEVERAS</b></a>
+				<a href="index1.html"><b>TELEVISORES</b></a>
+				<a href="index2.html"><b>LAVADORAS</b></a>
+			</div>
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<div class="head-nev">
+			<h1 class="neveras">NEVERAS</h1>
+			<div class="container-items">
+				<div class="item">
+					<div class="item1" onmouseover="showAdditionalInfo(this)" onmouseout="hideAdditionalInfo(this)">
+						<figure>
+							<img
+								src="neveras/1.jpg"	alt="nevera1"/>
+						</figure>
+						<div class="info-product">
+							<h2>Nevera Mabe No Frost, Congelador Superior 297 Litros, Blanco. RMA313FXCC</h2>
+							<p class="price-after">$2.799.900</p>
+							<p class="price-des">$1.899.900</p>
+							<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>Nuestra nevera MABE RMA313FXCC con tecnología Home Energy Saver ahorra hasta un 56% de energía, gracias al compresor Eco Advance y gas refrigerante R600. Cuidamos tu bolsillo con componentes de alta eficiencia que maximizan el ahorro de energía. Te da más frescura con el sistema Total Fresh Flow, que mejora la distribución del aire y así tus alimentos se conservan por mucho más tiempo. Los espacios inteligentes permiten organizar con facilidad todo tipo de bebidas y recipientes. Adquierela ahora, solamente debes dar click en comprar.</p>
+								<br>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Dispensador de agua removible de 2 litros de capacidad.</li>
+										<li>Ice Twist, más hielo para toda la familia.</li>
+										<li>Bandejas en vidrio templado, para mayor resistencia</li>
+										<li>Conserva alimentos por más tiempo sistema Total Fresh Flow</li>
+										<li>Mayor capacidad para almacenar todos tus alimentos</li>
+									</ul>
+								</p>
+							</div>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item" onmouseover="showAdditionalInfo(this)" onmouseout="hideAdditionalInfo(this)">
+						<figure>
+							<img
+								src="neveras/2.jpg"	alt="nevera2"/>
+						</figure>
+						<div class="info-product">
+							<h2>Nevera SAMSUNG No Frost, Congelador Superior 256 Litros Brutos, Gris. RT25FARADS8</h2>
+							<p class="price-after">$4.621.900</p>
+							<p class="price-des">$2.849.900</p>
+							<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>La nevera SAMSUNG RT25FARADS8/CO cuenta con una mayor frescura en sus espacios debido a que tiene múltiples salidas de aire que proporcionan un enfriamiento más uniforme, garantizando que llegue aire frio a todos los compartimientos. Además tiene un Compresor Digital Inverter con 20 años de garantía, que nos da ahorro de energía y brinda mayor durabilidad. Así mismo cuenta con amplios espacios que permiten que tus alimentos estén mejor organizados. Adquierela Ya!!</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Aislamiento de ciclopentano para conservar temperatura.</li>
+										<li>Tipo de congelacion All around Cooling, mayor eficiencia.</li>
+										<li>Luz Led eficiente: ahorro en el consumo de energía</li>
+										<li>Desodorizante integrado para evitar malos olores.</li>
+										<li>20 años de garantía en el Compresor Digital Inverter.</li>
+									</ul>
+								</p>
+							</div>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="neveras/3.jpg" alt="nevera3">
+					</figure>
+					<div class="info-product">
+						<h2>Nevera CHALLENGER No Frost, 231 Litros, Titanium Gris. CR249</h2>
+						<p class="price-after">$2.050.000</p>
+						<p class="price-des">$1.619.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>El mundo necesita que seamos responsables, necesita que evolucionemos, por eso la nueva serie de refrigeración Lúmina de Challenger lo hizo igual que tú. Su diseño moderno, elegante y sobrio proporciona una atractiva apariencia y mayor espacio interno. Lúmina se adapta a todas las necesidades, con la nevera CR249 tienes una nevera No Frost de 231 litros especial para pequeños espacios aprovechando al máximo todas las carácterísticas destacadas de una nevera pensada para ti. Compra ya la tuya!!</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Descongelación automática</li>
+										<li>Control de temperatura electrónico interno</li>
+										<li>Mayor capacidad de almacentamiento + Smart Pocket</li>
+										<li>Modos: Congelamiento rápido y ahorro de energía</li>
+										<li>Empaque magético removible y alarma de puerta abierta</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="neveras/4.jpg" alt="nevera4">
+					</figure>
+					<div class="info-product">
+						<h2>Nevera WHIRLPOOL No Frost, Congelador Superior 263 Litros, Gris. WRW25CKTWW</h2>
+						<p class="price-after">$2.149.900</p>
+						<p class="price-des">$1.778.300</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>Nevera WHIRLPOOL No Frost Congelador Superior 263 Litros WRW25CKTWW Gris con dispensador de agua exterior, superficie Anti Fingerprint y sistema de deshielo automático. Cuenta con tecnología 3D de distribución de aire, manteniendo la frescura de los alimentos por más tiempo. Adicional, tiene un cajón para frutas y verduras, compartimiento extra frío, cajón con control de humedad, anaquel con capacidad de latas y capacidad para botellas, tanque de agua de 2 litros y luz Led. ¡No lo pienses mas, compra el tuyo ahora!</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Cajón para frutas y verduras, organiza frutas y vegetales</li>
+										<li>Cajón de humedad, cajón con control automático de humedad</li>
+										<li>Tanque de agua 2 Litros</li>
+										<li>Superficie antifingerprint, como nuevo todos los días.</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="neveras/5.jpg" alt="nevera5">
+					</figure>
+					<div class="info-product">
+						<h2>Nevera MABE Frost, Una Puerta, 229 Litros, Grafito Rosado. RMU235NACG1</h2>
+						<p class="price-after">$1.494.900</p>
+						<p class="price-des">$1.249.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>La nevera RMU235NACG1 de MABE Convencional Grafito TIPO A es tropicalizada. Tiene un Sistema de conservació,n envolvente con hasta -6°,C de temperatura. Congelador má,s alto. Bandeja de carnes gran capacidad. Bandejas en Cristal Templado. Anaqueles y cajones Transparentes. Dispensador de agua Removible. Anaqueles con capacidad de botellas de 3 litros. ¡,Adquié,rela aquí,!</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+										<li>Mayor potencia de enfriamiento</li>
+										<li>Dispensador agua 2 litros removible</li>
+										<li>Cajon con topes de seguridad</li>
+										<li>Cajon con topes de seguridad</li>
+										<li>Cajon con topes de seguridad</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="neveras/6.jpg" alt="nevera6">
+					</figure>
+					<div class="info-product">
+						<h2>Nevera HACEB No Frost, Congelador Superior 226 Litros, Gris Plomo. N240SEMI</h2>
+						<p class="price-after">$1.899.900</p>
+						<p class="price-des">$1.799.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>¡Disfruta de la Nevera HACEB No Frost de 226 Litros con manija integrada color Gris Plomo! Con tecnología frescura envolvente que distribuye las corrientes de aire en tu nevera conservando los nutrientes de tus alimentos. Además, cuenta con panel digital interno con control digital de temperatura, alarma de puerta abierta y espacios maximizados para que distribuyas tus alimentos, ¡Y eso no es todo! Cuenta con iluminación LED y bandeja de frutas y verduras independientes. Renueva tu hogar ¡Compra ya y disfruta de la nevera HACEB!</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Frescura envolvente: aire frío uniforme y alimentos frescos</li>
+										<li>Control digital: elige el nivel de enfriamiento que desees</li>
+										<li>Congelamiento rápido: conserva nutrientes de tus alimentos</li>
+										<li>Nevera clase T, apta incluso para los climas mas extremos</li>
+										<li>Alarma de puerta abierta, evita pérdida frío</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,114 @@
+/*header*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: auto;
+}
+
+#pedidos-redes{
+  display: flex;
+  align-items: center; /* Alinea los elementos verticalmente */
+  width: 100%;
+  height: auto;
+  font-size: 110%;
+  margin: 0 0 0 40px; /*ajustar la distancia del ultimo icono (whasapp) con realacion al final de la pantalla*/
+}
+
+  /*menu desplegable*/
+  #menu-btn {
+    padding: 10px 20px;
+    margin: none;
+    border: none;
+    cursor: pointer;
+  }
+  #menu-btn img{
+    width: 50px;
+    transition: transform 5s; /* Cambia la duración de la transición (0.5 segundos en este ejemplo) */
+    margin: 0 100% 0 0;
+  }
+  #menu-btn img:hover{
+    transform: scale(1.5); /* Aplica un efecto de escala al hacer hover sobre la imagen */
+  }
+  #menu {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      background-color: #f0f0f0;
+      margin: 10px 100px 0 0;
+    }
+    #menu ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    #menu ul li {
+      margin-bottom: 10px;
+    }
+    
+    #menu ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      margin: 5px 5px 5px 5px;
+      display: block;
+      font-size: 20px;
+    }
+    #menu ul li a:hover {
+      background-color: #ff0000; /* Cambia a rojo cuando el mouse está sobre el enlace */
+      color: #ffffff; /* Cambia el color del texto para asegurar que sea legible */
+    }
+    
+    .oculto {
+      display: none;
+    }
+.logo{
+  margin-right: 36%; /* Ajusta el margen derecho según sea necesario */
+}
+
+.logo img{
+  width: 200px; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto */
+}
+.t-pedido{
+display: block;
+align-items: flex-start;
+justify-content: flex-start;
+color: #ff0000;
+font-size: 100%;
+}
+.redes-sociales {
+  display: flex;
+}
+
+.redes-sociales a {
+  margin-left: 10px; /* Ajusta el margen izquierdo entre los iconos de redes sociales */
+}
+.redes-sociales img{
+  width: 50px;
+}
+
+/*main*/
+main{
+  width: 100%;
+  height: auto;
+}
+
+/* footer*/
+footer{
+  background-color: #f0f0f0;
+  text-align: center;
+}
+.di-foo{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.footer{
+  margin: 5px 0 0 0;
+  font-size: 15px;
+  color: #000000;
+}

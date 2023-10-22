@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="styles2.css" />
+	</head>
+	<body>
+		<header>
+			<h1 class="t-principal">TIENDA</h1>
+			<div class="container-pag">
+				<a href="index.html"><b>NEVERAS</b></a>
+				<a href="index1.html"><b>TELEVISORES</b></a>
+				<a href="index2.html"><b>LAVADORAS</b></a>
+			</div>
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<div class="head-nev">
+			<h1 class="neveras">LAVADORAS</h1>
+			<div class="container-items">
+				<div class="item">
+					<div class="item1" onmouseover="showAdditionalInfo(this)" onmouseout="hideAdditionalInfo(this)">
+						<figure>
+							<img
+								src="lavadoras/1.jpg"	alt="lavadora1"/>
+						</figure>
+						<div class="info-product">
+							<h2>Lavadora WHIRLPOOL Carga Superior 20KG WW20LTAHLA Gris</h2>
+							<p class="price-after">$2.859.900</p>
+							<p class="price-des">$1.999.900</p>
+							<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>Lavadora WHIRLPOOL Carga Superior 20KG WW20LTAHLA Gris con tecnología Smart Action para mayor remoción de manchas, ahorro de agua y energético, tapa de vidrio templado y panel digital en tapa con opción de bloqueo. Cuenta con multidispensador, 11 ciclos, opción de remojo adicional, luz LED indicadora de status de ciclo, canasta de acero inoidable. Tamaño compacto pero gran capacidad.¡Adquiere la tuya ahora!</p>
+								<br>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Smart Action: Combina 3 tecnologías inteligentes.</li>
+										<li>Xpert Eco: Ciclo que ahorra hasta 45% de agua.</li>
+										<li>Consola frontal de botones sobre tapa.</li>
+										<li>10 años garantia en motor.</li>
+										<li>5 años garantia en consola.</li>
+									</ul>
+								</p>
+							</div>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="lavadoras/2.jpg" alt="lavadora2">
+					</figure>
+					<div class="info-product">
+						<h2>Lavadora SAMSUNG Carga Superior 19KG WA19T6260BY Gris</h2>
+						<p class="price-after">$2.299.900</p>
+						<p class="price-des">$1.999.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>La lavadora carga superior de 19Kg Samsung te brinda una amplia capacidad de lavado que te permite reducir la frecuencia de uso, incluso puedes incluir artículos realmente grandes. Maneja un motor Digital Inverter con 20 años de garantía que te permite tener un desempeño más potente y consume menos energía. Además, puedes personalizar tu ciclo de lavado de acuerdo a tus necesidades. Así mismo, tiene un compartimiento que disuelve el detergente en polvo antes de echarlo a la lavadora.</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>20 años de garantía en el motor Digital Inverter.</li>
+										<li>El Magic Dispenser te permite lavar sin preocuparte por los residuos de jabón.</li>
+										<li>La tecnología Digital Inverter brinda una mejor eficiencia energética, el ruido mínimo y un desempeño de larga duración.</li>
+										<li>Revisa el envase del detergente para utilizar la cantidad justa del mismo</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item" onmouseover="showAdditionalInfo(this)" onmouseout="hideAdditionalInfo(this)">
+						<figure>
+							<img
+								src="lavadoras/3.jpeg"	alt="lavadora3"/>
+						</figure>
+						<div class="info-product">
+							<h2>Lavadora LG  Carga Frontal 22KG WM22VV2S6BR/68889 Gris</h2>
+							<p class="price-after">$7.099.900</p>
+							<p class="price-des">$3.975.900</p>
+							<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>Pensado para los usuarios modernos y las nuevas exigencias de la vida, la Lavadora Carga Frontal LG WM22VV2S6BR te facilita el proceso de lavado con el sistema AIDD: Inteligencia artificial al servicio de tus prendas, la máquina aprende de tus hábitos y te muestra como cuidar tu ropa. Optimiza tiempos de lavado con ahorro de energía y agua. Protege a tu familia eliminando las bacterias de tus prendas con un potente chorro de vapor. Con ThinQ para que revises y controles tu lavadora desde un smartphone. Color plata que combina con tu hogar ¡LLévala hoy</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>AIDD (Inteligencia Artificial).</li>
+										<li>Opción TurboWash ™ (Acorta el tiempo de lavado).</li>
+										<li>Sistema de Lavado 6MotionDD ™ (6 Movimientos en tina).</li>
+										<li>Opción Vapor Tecnología SPA Steam™.</li>
+										<li>Tecnología SmartThinQ.</li>
+									</ul>
+								</p>
+							</div>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="lavadoras/4.jpeg" alt="lavadora4">
+					</figure>
+					<div class="info-product">
+						<h2>Lavadora WHIRLPOOL Carga Superior 18KG WWG18BSHLA Gris</h2>
+						<p class="price-after">$2.589.900</p>
+						<p class="price-des">$1.799.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>Lavadora WHIRLPOOL Carga Superior 18KG WWG18BSHLA Gris, con sistema de llenado 3D Waterfall, llena la canasta de agua en 3 dimensiones, y permite remojar las prendas al interior de la tina, con el fin de remover jabón y suciedad de los tejidos en forma más eficiente. Cuenta también con 2 depósitos automáticos de detergente y suavizante, 2 niveles de suciedad: sucio y muy sucio, Intelcarga y 4 tamaños de carga: pequeño, mediano, grande y extra grande. Además, indicador LED de tiempo restante de ciclo. ¡Compra la tuya ahora!</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Control de Perilla.</li>
+										<li>3D Waterfall - Sistema de llenado de agua en 3 dimensiones.</li>
+										<li>Turbo Power: permite lavar sin maltratar prendas o tejidos.</li>
+										<li>Deposito automatico de detergente y suavizante</li>
+										<li>Intelicarga Indicador de carga ubicado dentro de la canasta.</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="lavadoras/5.jpg" alt="lavadora5">
+					</figure>
+					<div class="info-product">
+						<h2>Lavadora SAMSUNG Carga Frontal 20 Kilogramos WF20T6000AW/CO Blanca</h2>
+						<p class="price-after">$3.519.900</p>
+						<p class="price-des">$3.049.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>Si deseas tener máxima potencia de lavado, la lavadora WF20T6000AW/CO Samsung y su innovador estilo es perfecta e ideal para ti. Cuenta con una capacidad de 20 kilogramos y un motor Digital Inverter con 20 años de garantía. Mantén el interior de tu lavadora limpio, con la tecnologia Self Clean, que usa una combinación de remojo, vibración y rotación para limpiar el interior de tu electrodeméstico. Además, tiene la innovadora tecnología VRT Plus™, que reduce el ruido y vibraciones durante el ciclo de lavado. Su diseño es moderno, elegante y ergonómico. ¡No esperes más y adquiérela ya!</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+										<li>20 años de garantía en el motor Digital Inverter</li>
+										<li>Un lavado fresco y limpio</li>
+										<li>Resuelve cualquier problema fácilmente</li>
+										<li>Disfruta de un elegante diseño</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="lavadoras/6.jpeg" alt="lavadora6">
+					</figure>
+					<div class="info-product">
+						<h2>Lavadora WHIRLPOOL Carga Superior 10 Kilogramos WWI10ASHLS Plateado</h2>
+						<p class="price-after">$1.899.900</p>
+						<p class="price-des">$1.424.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>Esta lavadora Whirlpool tiene un sencillo y práctico diseño|. La capacidad máxima de carga de este electrodoméstico es de 10 kilogramos y cuenta con opción de seleccionar entre sus 8 niveles de agua según tus necesidades. Aprovecha el sistema tornado para tener tus prendas como nuevas. Adquiérela ya.</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Tipo de lavado tornado, todo impecable</li>
+										<li>Panel de control con perilla, fácil y eficiente</li>
+										<li>Tina en acero inoxidable, ni una mancha</li>
+										<li>4 niveles de selección de agua, acorde a la cantidad que laves</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="index2.js"></script>
+	</body>
+</html>

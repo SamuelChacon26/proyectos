@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="styles1.css" />
+	</head>
+	<body>
+		<header>
+			<h1 class="t-principal">TIENDA</h1>
+			<div class="container-pag">
+				<a href="index.html"><b>NEVERAS</b></a>
+				<a href="index1.html"><b>TELEVISORES</b></a>
+				<a href="index2.html"><b>LAVADORAS</b></a>
+			</div>
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<div class="head-nev">
+			<h1 class="neveras">TELEVISORES</h1>
+			<div class="container-items">
+				<div class="item">
+					<div class="item1" onmouseover="showAdditionalInfo(this)" onmouseout="hideAdditionalInfo(this)">
+						<figure>
+							<img
+								src="televisores/1.jpeg"	alt="televisor1"/>
+						</figure>
+						<div class="info-product">
+							<h2>TV SAMSUNG 50 Pulgadas 127 cm 50CU8000 4K-UHD LED Smart TV</h2>
+							<p class="price-after">$2.999.900</p>
+							<p class="price-des">$1.849.900</p>
+							<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>Tu TV SAMSUNG 50CU8000 Crystal UHD 4K cuenta con un procesador Crystal el cual escala con inteligencia artificial las imágenes hasta 4K y así podrás visualizar escenas más reales, logrando acceder a las películas, programas de televisión y juegos fácilmente en la pantalla de inicio del Samsung Hub adaptada para ti. Adicion al, gracias a la tecnología incorporada de PurColor podrás experimentar un nuevo nivel de profundidad y color en las imágenes. ¡Ven por tu TV ahora!</p>
+								<br>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Siente la realidad de la resolución 4K UHD.</li>
+										<li>¿Buscas algo? Pregúntale a tu asistente de voz Bixby.</li>
+										<li>Maxima la calidad en color de las escenas de tu contenido.</li>
+										<li>Siente la realidad de la resolución 4K UHD.</li>
+										<li>Modo sinfonía: Disfruta del sonido simultaneo entre TV y Barra.</li>
+									</ul>
+								</p>
+							</div>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item" onmouseover="showAdditionalInfo(this)" onmouseout="hideAdditionalInfo(this)">
+						<figure>
+							<img
+								src="televisores/2.jpeg"	alt="televisor2"/>
+						</figure>
+						<div class="info-product">
+							<h2>TV LG 50" Pulgadas 126 cm 50NANO77SRA 4K-UHD NanoCell Smart TV</h2>
+							<p class="price-after">$3.499.900</p>
+							<p class="price-des">$2.049.900</p>
+							<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>Las imágenes cobran vida con el TV LG NanoCell 50NANO77S pues llevan los colores puros a otro nivel y asi disfrutar de cualquier contenido con una imagen más real y una resolución 4K. El procesador de AI utiliza algoritmos de aprendizaje profundos para analizar lo que ves y transformar el contenido a tus preferencias, generando como resultado una imagen más nítida, con niveles de definición y detalle notablemente superiores, incluso en nuestras pantallas más grandes. Incluye Magic Remote, controla el televisor con la voz, sin necesidad de teclear ¡lleva el tuyo ahora!</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Procesador IA mejora tus contenidos, experiencia más real.</li>
+										<li>Alerta deportes: Sigue tu equipo favorito en tu televisor.</li>
+										<li>ThinQ-webOS: Con tu cuenta recibe recomendaciones para ti.</li>
+										<li>Magic remote: Accede con tu voz a tu contenido favorito.</li>
+									</ul>
+								</p>
+							</div>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="televisores/3.jpeg" alt="televisor3">
+					</figure>
+					<div class="info-product">
+						<h2>TV CHALLENGER 43" Pulgadas 108 cm LED43LO69 FHD LED Smart TV Android</h2>
+						<p class="price-after">$1.149.900</p>
+						<p class="price-des">$999.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>Con tu Smart TV CHALLENGER pantalla de 43" referencia 43LO69BT podrás recrear todo tipo de contenido con la imagen en resolución FHD para que no te pierdas ningún detalle. Además, cuenta con sistema Android y aplicaciones pre-cargadas como Youtube, Netflix, Prime Video y tendrás todo al alcance de un click Incluye control remoto de voz integrado, el cual facilitará la navegación en tu Smart TV, llegando de forma sencilla y simple a tu contenido favorito y te permitirá buscar lo que necesites en cualquier momento. ¡Estrena en casa lo que siempre soñaste usar!</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Tecnología Android con interfaz de facil uso y conexión.</li>
+										<li>Control remoto con asistente de voz integrado.</li>
+										<li>Aprovecha 8GB de almacenamiento y descarga multiples APPS.</li>
+										<li>Comparte contenido desde cualquier dispositivo a tu TV.</li>
+										<li>Sleep Timer permite quedarte dormido viendo la tele.</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="televisores/4.jpeg" alt="televisor4">
+					</figure>
+					<div class="info-product">
+						<h2>TV HYUNDAI 43" Pulgadas 109.2 cm HYLED4322GiM FHD LED Smart TV Google</h2>
+						<p class="price-after">$1.279.900</p>
+						<p class="price-des">$1.029.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>El TV HYLED4322GiM de HYUNDAI Electronics permite convertir escenas en momentos inolvidables resaltando cada detalle con imágenes en Full HD. Adicional, su personalización y administración de perfiles brinda la comodidad necesaria para que puedas ordenar tu contenido y el de tu familia de forma segura gracias a su sistema operativo Google TV el cual es más liviano y rápido. ¡Compra el tuyo AHORA!</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Chromecast para compartir contenido con tus dispositivos.</li>
+										<li>HDR10: Disfruta de mejor color, brillo y detalle.</li>
+										<li>Google TV: Sistema operativo más liviano y rápido.</li>
+										<li>Crea diferentes cuentas para los miembro de tu hogar.</li>
+										<li>Dolby Audio para un sonido envolvente, claro e intenso.</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="televisores/5.jpeg" alt="televisor5">
+					</figure>
+					<div class="info-product">
+						<h2>TV KALLEY 43 Pulgadas 109 cm ATV43FHDE FHD LED Smart TV Android</h2>
+						<p class="price-after">$1.599.900</p>
+						<p class="price-des">$989.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>La experiencia de uso más versátil, rápida, fácil y completa en un Smart TV! Su SO Android TV versión 11 te permite disfrutar de +8000 apps disponibles en Google Play y +300 juegos. Podrás conectar múltiples dispositivos vía Bluetooth (incluso controles para juegos). Además, podrás controlar el TV y todo tu ecosistema Smart Home a través de comandos de voz con el Asistente de Google, gracias al micrófono en el control remoto. Controla y transmite contenido desde tu Smartphone usando su Chromecast incorporado. Calidad y respaldo con 2 años de garantía más de 15 años de experiencia.</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+										<li>Sistema Android TV versión 11, el más completo y versátil.</li>
+										<li>Entretenimiento sin fin con miles de Apps (Google Play).</li>
+										<li>Usa comandos de voz para controlar tu TV (Google Assistant).</li>
+										<li>Usa la mejor conectividad Bluetooth y WiFi</li>
+										<li>Gran Respaldo con 2 años de Garantía</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="televisores/6.jpeg" alt="televisor6">
+					</figure>
+					<div class="info-product">
+						<h2>TV KALLEY 32 Pulgadas 81 cm ATV32HDW HD LED Smart TV Android</h2>
+						<p class="price-after">$1.099.900</p>
+						<p class="price-des">$689.900</p>
+						<button class="btn-show-info">Mostrar más información</button>
+							<div class="additional-info">
+								<p><h3>RESUMEN</h3></p>
+								<p>La experiencia de uso más versátil, rápida, fácil y completa en un Smart TV! Su SO Android TV versión 11 te permite disfrutar de +8000 apps disponibles en Google Play y +300 juegos. Podrás conectar múltiples dispositivos vía Bluetooth (incluso controles para juegos). Además, podrás controlar el TV y todo tu ecosistema Smart Home a través de comandos de voz con el Asistente de Google, gracias al micrófono en el control remoto. Controla y transmite contenido desde tu Smartphone usando su Chromecast incorporado. Calidad y respaldo con 2 años de garantía más de 15 años de experiencia</p>
+								<p><h3>CARACTERÍSTICAS</h3>
+									<ul>
+										<li>Sistema Android TV versión 11, el más completo y versátil.</li>
+										<li>Entretenimiento sin fin con miles de Apps (Google Play).</li>
+										<li>Usa comandos de voz para controlar tu TV (Google Assistant).</li>
+										<li>Usa la mejor conectividad Bluetooth y WiFi.</li>
+										<li>Gran Respaldo con 2 años de Garantía.</li>
+									</ul>
+								</p>
+							</div>					
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="index1.js"></script>
+	</body>
+</html>
